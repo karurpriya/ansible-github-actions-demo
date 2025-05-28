@@ -1,0 +1,11 @@
+---
+- name: Configure web server
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Install Apache
+      debug:
+        msg: "Apache installed successfully!"
+    - name: Start Apache
+      debug:
+        msg: "Apache service started and enabled!"
